@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+
+        android:title="About us"
+        android:id="@+id/aboutbar"
+
+        >
+    </item>
+
+    <item
+
+        android:title="Contact"
+        android:id="@+id/contactbar"
+
+        >
+    </item>
+
+    <item
+
+        android:title="Rate us"
+        android:id="@+id/ratebar"
+
+        >
+    </item>
+
+    <item
+
+        android:title="Privacy Policy"
+        android:id="@+id/privacybar"
+
+        >
+    </item>
+
+    <item
+
+        android:title="Refrences"
+        android:id="@+id/refrences"
+
+        >
+    </item>
+
+
+</menu>

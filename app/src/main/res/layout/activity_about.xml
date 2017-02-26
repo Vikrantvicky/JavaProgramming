@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/activity_toolbar">
+
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="JAVA Programming"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary">
+                </TextView>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="240dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/cardView">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Developed and Designed By:"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimary">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vikrant Singhal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary">
+                </TextView>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="310dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="#1 Application for Java"
+                    android:paddingStart="10dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold">
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="35dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text=" This app enables you to carry basic Java programming tutorial in your android.\n
+It contains about 50+ programs, many FAQ's and Exam Questions also.\n
+This app has a very simple user interface and the contents can be easily understood by the users.\n
+This will definitely help u for preparing for interviews, tests and in many more ways. Wherever and whenever you require any info about Java you are just a click away.....\n
+\n
+All the Best....">
+                </TextView>
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/icon"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/cardView" />
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,186 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vamp.javaprogramming">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".DashboardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+
+        <activity android:name=".FAQActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity"/>
+        </activity>
+
+        <activity android:name=".ProgActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity"/>
+        </activity>
+
+        <activity android:name=".TutorialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity"/>
+        </activity>
+
+        <activity android:name=".UEQActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity"/>
+        </activity>
+
+        <activity android:name=".ActivityAbout"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity"/>
+        </activity>
+
+        <activity android:name=".ActivityHello"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProgActivity"/>
+
+        </activity>
+
+        <activity android:name=".ActivityArea"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProgActivity"/>
+
+        </activity>
+
+        <activity android:name=".ActivityOdd"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProgActivity"/>
+
+        </activity>
+
+        <activity android:name=".ActivityASMD"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProgActivity"/>
+        </activity>
+        <activity android:name=".ActivityAddn"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProgActivity"/>
+        </activity>
+        <activity android:name=".ActivityDigits"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProgActivity"/>
+        </activity>
+        <activity android:name=".ActivityGreatest"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProgActivity"/>
+        </activity>
+        <activity android:name=".ActivitySwapping"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+        </activity>
+        <meta-data android:name="android.support.PARENT_ACTIVITY"
+            android:value=".ProgActivity"/>
+        <activity android:name=".ActivitySorting"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProgActivity"/>
+
+        </activity>
+        <activity android:name=".ActivitySelection"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProgActivity"/>
+
+        </activity>
+
+        <activity android:name=".ActivityRefrence"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".DashboardActivity"/>
+        </activity>
+        <activity android:name=".ActivityIntro"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivityStructure"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivityVO"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivityLoop"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivitySandH"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivityFeatures"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivityClass"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivityMethod"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivityConstructor"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivityObject"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivityArray"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivitySwing"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity android:name=".ActivityApplet"
+            android:configChanges="keyboardHidden|orientation|screenSize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                android:value=".TutorialActivity"/>
+        </activity>
+        <activity
+            android:name=".ContactActivity"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert" />
+    </application>
+
+</manifest>

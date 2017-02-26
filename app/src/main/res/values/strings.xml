@@ -1,0 +1,869 @@
+<resources>
+    <string name="app_name">Java Programming</string>
+
+    <string formatted="false" name="add_n">
+        import java.util.Scanner;\n
+        public class JavaProgram\n
+{ \n
+        public static void main(String args[ ])\n
+    {\n
+        int i, n, sum=0, num;\n
+        Scanner scan = new Scanner(System.in);\n
+        System.out.print(\"How many Number You want to Enter to Add them ? \");\n
+        n = scan.nextInt();\n
+        System.out.print(\"Enter \" +n+ \" numbers : \");\n
+        for(i=0; i&lt;n; i++)\n
+        {\n
+            num = scan.nextInt();\n
+            sum = sum + num;\n
+        }\n
+        System.out.print(\"Sum of all \" +n+ \" numbers is \" +sum);\n
+    }\n
+}
+    </string>
+    <string formatted="false" name="Add_digits">
+        import java.util.Scanner;\n
+        public class JavaProgram\n
+{\n
+        public static void main(String args[])\n
+    {\n
+        int num, rem=0, sum=0, temp;\n
+        Scanner scan = new Scanner(System.in);\n
+        System.out.print(\"Enter a Number : \");\n
+        num = scan.nextInt();\n
+	    temp = num;\n
+        while(num&gt;0)\n
+        {\n
+            rem = num%10;\n
+            sum = sum+rem;\n
+            num = num/10;\n
+        }\n
+	System.out.print(\"Sum of Digits of \" +temp+ \" is \" +sum);\n
+    }\n
+}
+    </string>
+
+    <string formatted="false" name="largest_three">
+        import java.util.Scanner;\n
+         public class JavaProgram\n
+{\n
+          public static void main(String args[])\n
+    {\n
+        int a, b, c, big;\n
+        Scanner scan = new Scanner(System.in);\n
+	    System.out.print(\"Enter Three Numbers : \");\n
+        a = scan.nextInt();\n
+        b = scan.nextInt();\n
+        c = scan.nextInt();\n
+
+        // let a is the largest\n
+        big = a;\n
+        if(big&lt;b)\n
+        {\n
+            if(b&gt;c)\n
+            {\n
+                big = b;\n
+            }\n
+            else\n
+            {\n
+                big = c;\n
+            }\n
+        }\n
+        else if(big&lt;c)\n
+        {\n
+            if(c&gt;b)\n
+            {\n
+                big = c;\n
+            }\n
+            else\n
+            {\n
+                big = b;\n
+            }\n
+        }\n
+        else\n
+        {\n
+            big = a;\n
+        }\n
+	    System.out.print(\"Largest Number is \" +big);\n
+    }\n
+}
+    </string>
+
+    <string formatted="false" name="swapping">
+        import java.util.Scanner;\n
+        public class JavaProgram\n
+{\n
+        public static void main(String args[])\n
+    {\n
+        int num1, num2, swap;\n
+        Scanner scan = new Scanner(System.in);\n
+	    System.out.print(\"Enter Two Number : \");\n
+        System.out.print(\"First Number : \");\n
+        num1 = scan.nextInt();\n
+        System.out.print(\"Second Number : \");\n
+        num2 = scan.nextInt();\n
+
+        swap = num1;\n
+        num1 = num2;\n
+        num2 = swap;\n
+
+        System.out.print(\"The Value of the First and Second Number after Swapping is \");\n
+	    System.out.print(\"First Number = \" +num1);\n
+        System.out.print(\"\nSecond Number = \" +num2);\n
+    }\n
+}
+    </string>
+
+    <string formatted="false" name="helloworld">
+        class hello\n
+        {\n
+            public static void main(String[ ] args)\n
+            {\n
+              \tSystem.out.println(\"HELLO WORLD\");\n
+             }\n
+        }
+    </string>
+    <string formatted="false" name="area_of_triangle">
+         import java.util.Scanner;\n
+          class area\n
+        {\n
+        public static void main(String args[ ] args)\n
+        {\n
+        Scanner sc =new Scanner(System.in);\n
+        System.out.println(\"Enter height and breadth of the triangle\");\n
+        int h=sc.nextInt();\n
+        int b=sc.nextInt();\n
+        float area=(1/2*b*h);\n
+        System.out.println(\"Area of the triangle is\" + area);\n
+        }\n
+        }
+
+    </string>
+    <string formatted="false" name="odd_even">
+        import java.util.Scanner;\n
+        class OddOrEven\n
+{\n
+   public static void main(String args[ ])\n
+   {\n
+      int x;\n
+      System.out.println(\"Enter an integer to check if it is odd or even\");\n
+      Scanner in = new Scanner(System.in);\n
+      x = in.nextInt();\n
+        if ( x % 2 == 0 )\n
+         System.out.println(\"You entered an even number.\");\n
+      else\n
+         System.out.println(\"You entered an odd number\");\n
+   }\n
+}
+    </string>
+    <string formatted="false" name="asmd">
+        import java.util.Scaner;\n
+class asmd\n
+{\n
+public static void main(String[ ] args)\n
+{\n
+int a,b;\n
+Scanner sc = new Scanner(System.in);\n
+System.out.println(\"Enter two numbers.\");\n
+a=sc.nextInt();\n
+b=sc.nextInt();\n
+int sum=a+b;\n
+int sub=a-b;\n
+int mul=a*b;\n
+int div=((float)a/b);\n
+System.out.println(\"Sum is\"+ sum);\n
+System.out.println(\"Subtraction is\"+ sub);\n
+System.out.println(\"Multiplication is\"+ mul);\n
+System.out.println(\"Division is\"+ div);\n
+}\n
+}
+    </string>
+    <string formatted="false" name="bubble">
+import java.util.Scanner;\n
+public class JavaProgram\n
+{\n
+   public static void main(String args[])\n
+   {\n
+       int n, i, j, temp;\n
+       int arr[] = new int[50];\n
+       Scanner scan = new Scanner(System.in);\n
+       System.out.print(\"Enter Total Number of Elements : \");\n
+       n = scan.nextInt();\n
+       System.out.print(\"Enter \" +n+ \" Numbers : \");\n
+       for(i=0; i&lt;n; i++)\n
+       {\n
+           arr[i] = scan.nextInt();\n
+       }\n
+
+       System.out.print(\"Sorting Array using Bubble Sort Technique...\");\n
+       for(i=0; i&lt;(n-1); i++)\n
+       {\n
+           for(j=0; j&lt;(n-i-1); j++)\n
+           {\n
+               if(arr[j] &gt; arr[j+1])\n
+               {\n
+                   temp = arr[j];\n
+                   arr[j] = arr[j+1];\n
+                   arr[j+1] = temp;\n
+               }\n
+           }\n
+       }\n
+
+       System.out.print(\"Array Sorted Successfully..!!\");\n
+       System.out.print(\"Sorted List in Ascending Order :\");\n
+       for(i=0; i&lt;n; i++)\n
+       {\n
+           System.out.print(arr[i]+ \"  \");\n
+       }\n
+   }\n
+}
+    </string>
+    <string formatted="false" name="binary">
+        import java.util.Scanner;\n
+class BinarySearch\n
+{\n
+  public static void main(String args[])\n
+  {\n
+    int c, first, last, middle, n, search, array[];\n
+
+    Scanner in = new Scanner(System.in);\n
+    System.out.println(\"Enter number of elements\");\n
+    n = in.nextInt();\n
+    array = new int[n];\n
+
+    System.out.println(\"Enter \" + n + \" integers\");\n
+
+      for (c = 0; c &lt; n; c++)\n
+      array[c] = in.nextInt();\n
+
+    System.out.println(\"Enter value to find\");\n
+    search = in.nextInt();\n
+
+    first  = 0;\n
+    last   = n - 1;\n
+    middle = (first + last)/2;\n
+
+    while( first &lt;= last )
+    {
+      if ( array[middle] &lt; search )\n
+        first = middle + 1;\n
+      else if ( array[middle] == search )\n
+      {\n
+        System.out.println(search + \" found at location \" + (middle + 1) + \".\");\n
+        break;\n
+      }\n
+      else\n
+         last = middle - 1;\n
+         middle = (first + last)/2;\n
+   }\n
+   if ( first &gt; last )\n
+      System.out.println(search + \" is not present in the list.\");\n
+  }\n
+}
+    </string>
+    <string formatted="false" name="linear">
+        import java.util.Scanner;\n
+class LinearSearch\n
+{\n
+  public static void main(String args[])\n
+  {\n
+    int c, n, search, array[];\n
+    Scanner in = new Scanner(System.in);\n
+    System.out.println(\"Enter number of elements\");\n
+    n = in.nextInt();\n
+    array = new int[n];\n
+    System.out.println(\"Enter \" + n + \" integers\");\n
+    for (c = 0; c &lt; n; c++)\n
+    array[c] = in.nextInt();\n
+
+    System.out.println("Enter value to find");\n
+    search = in.nextInt();\n
+
+    for (c = 0; c &lt; n; c++)\n
+    {\n
+      if (array[c] == search)\n
+      {\n
+         System.out.println(search + \" is present at location \" + (c + 1) + \".\");\n
+          break;\n
+      }\n
+   }\n
+   if (c == n)\n
+      System.out.println(search + \" is not present in array.\");\n
+  }\n
+}
+    </string>
+    <string formatted="false" name="insertion">
+import java.util.Scanner;\n
+public class JavaProgram\n
+{\n
+   public static void main(String args[])\n
+   {\n
+       int size, i, j, temp;\n
+       int arr[] = new int[50];\n
+       Scanner scan = new Scanner(System.in);\n
+       System.out.print(\"Enter Array Size : \");\n
+       size = scan.nextInt();\n
+       System.out.print(\"Enter Array Elements : \");\n
+       for(i=0; i&lt;size; i++)\n
+       {\n
+           arr[i] = scan.nextInt();\n
+       }\n
+
+       System.out.print(\"Sorting Array using Insertion Sort Technique..\");\n
+       for(i=1; i&lt;size; i++)\n
+       {\n
+           temp = arr[i];\n
+           j = i - 1;\n
+           while((temp &lt; arr[j]) &amp;&amp; (j &gt;= 0))\n
+           {\n
+               arr[j+1] = arr[j];\n
+               j = j - 1;\n
+           }\n
+           arr[j+1] = temp;\n
+       }\n
+
+       System.out.print(\"Array after Sorting is : \");\n
+       for(i=0; i&lt;size; i++)\n
+       {\n
+           System.out.print(arr[i] + \"  \");\n
+       }\n
+   }\n
+}
+    </string>
+    <string formatted="false" name="selection">
+import java.util.Scanner;\n
+public class JavaProgram\n
+{\n
+   public static void main(String args[])\n
+   {\n
+       int size, i, j, temp;\n
+       int arr[] = new int[50];\n
+       Scanner scan = new Scanner(System.in);\n
+       System.out.print(\"Enter Array Size : \");\n
+       size = scan.nextInt();\n
+       System.out.print(\"Enter Array Elements : \");\n
+       for(i=0; i&lt;size; i++)\n
+       {\n
+           arr[i] = scan.nextInt();\n
+       }\n
+
+       System.out.print(\"Sorting Array using Selection Sort Technique..\");\n
+       for(i=0; i&lt;size; i++)\n
+       {\n
+           for(j=i+1; j&lt;size; j++)\n
+           {\n
+               if(arr[i] &gt; arr[j])\n
+               {\n
+                   temp = arr[i];\n
+                   arr[i] = arr[j];\n
+                   arr[j] = temp;\n
+               }\n
+           }\n
+       }\n
+
+       System.out.print(\"Now the Array after Sorting is :\");\n
+       for(i=0; i&lt;size; i++)\n
+       {\n
+           System.out.print(arr[i]+ \"  \");\n
+       }\n
+   }\n
+}
+    </string>
+
+    <string formatted="false" name="merge">
+        import java.util.*;\n
+public class MergeSort\n
+{\n
+public int a[]=new int[50];\n
+public void merge_sort(int low,int high)\n
+{\n
+ int mid;\n
+ if(low&lt;high)\n
+ {\n
+  mid=(low+high)/2;\n
+  merge_sort(low,mid);\n
+  merge_sort(mid+1,high);\n
+  merge(low,mid,high);\n
+ }\n
+}\n
+public void merge(int low,int mid,int high)\n
+{\n
+ int h,i,j,k;\n
+ int b[]=new int[50];\n
+ h=low;\n
+ i=low;\n
+ j=mid+1;\n
+
+ while((h&lt;=mid)&amp;&amp;(j&lt;=high))\n
+ {\n
+  if(a[h]&lt;=a[j])\n
+  {\n
+   b[i]=a[h];\n
+   h++;\n
+  }\n
+  else\n
+  {\n
+   b[i]=a[j];\n
+   j++;\n
+  }\n
+  i++;\n
+ }\n
+ if(h&gt;mid)\n
+ {\n
+  for(k=j;k&lt;=high;k++)\n
+  {\n
+   b[i]=a[k];\n
+   i++;\n
+  }\n
+ }\n
+ else\n
+ {\n
+  for(k=h;k&lt;=mid;k++)\n
+  {\n
+   b[i]=a[k];\n
+   i++;\n
+  }\n
+ }\n
+ for(k=low;k&lt;=high;k++)\n
+  a[k]=b[k];\n
+}\n
+public MergeSort()\n
+{\n
+ int num,i;\n
+System.out.println(\"             MERGE SORT PROGRAM            \");\n
+System.out.println();\n
+System.out.println();\n
+System.out.println("Please Enter THE No. OF ELEMENTS you want to sort:\");\n
+ num=new Scanner(System.in).nextInt();\n
+ System.out.println();\n
+ System.out.println(\"Now, Please Enter the (\"+ num +\") nos. :\");\n
+ for(i=1;i&lt;=num;i++)\n
+ {\n
+  a[i]=new Scanner(System.in).nextInt() ;\n
+ }\n
+ merge_sort(1,num);\n
+ System.out.println();\n
+ System.out.println(\"So, the sorted list (using MERGE SORT) will be :\");\n
+ System.out.println();\n
+ System.out.println();\n
+
+ for(i=1;i&lt;=num;i++)\n
+     System.out.print(a[i]+\"    \");\n
+}\n
+public static void main(String[] args)\n
+ {\n
+    new MergeSort();\n
+}\n
+}
+    </string>
+    <string-array name="header">
+        <item>Q1. What is difference between JDK,JRE and JVM?</item>
+        <item>Q2. How many types of memory areas are allocated by JVM?</item>
+        <item>Q3. What is JIT compiler?</item>
+        <item>Q4. What is the difference between a constructor and a method?</item>
+        <item>Q5. What is the purpose of garbage collection in Java, and when is it used?</item>
+        <item>Q6. What is an abstract class?</item>
+        <item>Q7. What is the difference between an Interface and an Abstract class?</item>
+        <item>Q8. State the significance of public, private, protected, default modifiers both singly and in combination and state the effect of package relationships on declared items qualified by these modifiers.</item>
+        <item>Q9. What is static in java?</item>
+        <item>Q10. What is final class?</item>
+        <item>Q11. What is Overriding?</item>
+        <item>Q12. How can I customize the seralization process? i.e. how can one have a control over the serialization process?</item>
+        <item>Q13. What if the main() method is declared as private?</item>
+        <item>Q14. Which two method you need to implement for key Object in HashMap ?</item>
+        <item>Q15. How do you handle error condition  while writing stored procedure or accessing stored procedure from java?</item>
+    </string-array>
+
+    <string-array name="Q1">
+        <item>JVM\n
+            JVM is an acronym for Java Virtual Machine, it is an abstract machine which provides the runtime environment in which java bytecode can be executed. It is a specification.
+            JVMs are available for many hardware and software platforms (so JVM is platform dependent).\n\n
+             JRE\n
+            JRE stands for Java Runtime Environment. It is the implementation of JVM.\n\n
+            JDK\n
+            JDK is an acronym for Java Development Kit. It physically exists. It contains JRE + development tools. </item>
+    </string-array>
+    <string-array name="Q2">
+        <item>Many types:\n
+            Class(Method) Area\n
+            Heap\n
+            Stack\n
+            Program Counter Register\n
+            Native Method Stack
+</item>
+    </string-array>
+    <string-array name="Q3">
+        <item>Just-In-Time(JIT) compiler:It is used to improve the performance. JIT compiles parts of the byte code that have similar functionality at the same time, and hence reduces the amount of time needed for compilation.Here the term “compiler” refers to a translator from the instruction set of a Java virtual machine (JVM) to the instruction set of a specific CPU</item>
+    </string-array>
+    <string-array name="Q4">
+        <item>A constructor is a member function of a class that is used to create objects of that class. It has the same name as the class itself, has no return type, and is invoked using the new operator.\n\n
+
+A method is an ordinary member function of a class. It has its own name, a return type (which may be void), and is invoked using the dot operator.</item>
+    </string-array>
+    <string-array name="Q5">
+        <item>The purpose of garbage collection is to identify and discard objects that are no longer needed by a program so that their resources can be reclaimed and reused.
+
+A Java object is subject to garbage collection when it becomes unreachable to the program in which it is used.</item>
+    </string-array>
+    <string-array name="Q6">
+        <item>Abstract class must be extended/subclassed (to be useful). It serves as a template. A class that is abstract may not be instantiated (ie. you may not call its constructor), abstract class may contain static data.
+
+Any class with an abstract method is automatically abstract itself, and must be declared as such. A class may be declared abstract even if it has no abstract methods. This prevents it from being instantiated</item>
+    </string-array>
+    <string-array name="Q7">
+        <item>An abstract class can have instance methods that implement a default behavior. An Interface can only declare constants and instance methods, but cannot implement default behavior and all methods are implicitly abstract.\n\n
+
+An interface has all public members and no implementation. An abstract class is a class which may have the usual flavors of class members (private, protected, etc.), but has some abstract methods.</item>
+    </string-array>
+    <string-array name="Q8">
+        <item>public:\n Public class is visible in other packages, field is visible everywhere (class must be public too)\n\n
+
+private :\n Private variables or methods may be used only by an instance of the same class that declares the variable or method, A private feature may only be accessed by the class that owns the feature.\n\n
+
+protected :\n Is available to all classes in the same package and also available to all subclasses of the class that owns the protected feature. This access is provided even to subclasses that reside in a different package from the class that owns the protected feature.\n\n
+
+What you get by default ie, without any access modifier (ie, public private or protected). It means that it is visible to all within a particular package.</item>
+    </string-array>
+    <string-array name="Q9">
+        <item>Static means one per class, not one for each object no matter how many instance of a class might exist. This means that you can use them without creating an instance of a class.Static methods are implicitly final, because overriding is done based on the type of the object, and static methods are attached to a class, not an object.
+
+A static method in a superclass can be shadowed by another static method in a subclass, as long as the original method was not declared final. However, you can\'t override a static method with a nonstatic method. In other words, you can\'t change a static method into an instance method in a subclass.</item>
+    </string-array>
+    <string-array name="Q10">
+        <item>A final class can\'t be extended ie., final class may not be subclassed. A final method can\'t be overridden when its class is inherited. You can\'t change value of a final variable (is a constant).</item>
+    </string-array>
+    <string-array name="Q11">
+        <item>When a class defines a method using the same name, return type, and arguments as a method in its superclass, the method in the class overrides the method in the superclass.
+
+When the method is invoked for an object of the class, it is the new definition of the method that is called, and not the method definition from superclass. Methods may be overridden to be more public, not more private</item>
+    </string-array>
+    <string-array name="Q12">
+        <item>Yes it is possible to have control over serialization process. The class should implement Externalizable interface. This interface contains two methods namely readExternal and writeExternal.
+
+You should implement these methods and write the logic for customizing the serialization process.</item>
+    </string-array>
+    <string-array name="Q13">
+        <item>The program compiles properly but at runtime it will give "main() method not public." message.</item>
+    </string-array>
+    <string-array name="Q14">
+        <item>In order to use any object as Key in HashMap, it must implements equals and hashcode method in Java</item>
+    </string-array>
+    <string-array name="Q15">
+        <item>This is one of the tough Java interview question and its open for all, my friend didn\'t know the answer so he didn\'t mind telling me. my take is that stored procedure should return error code if some operation fails but if stored procedure itself fail than catching SQLException is only choice.</item>
+    </string-array>
+    <string formatted="false" name="into">
+        <b>Java</b> is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible.\n\n
+        It is intended to let application developers <b>\"write once, run anywhere\"</b> (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.\n\n
+        <b>Java</b> applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of computer architecture. As of 2016, Java is one of the most popular programming languages in use, particularly for client-server web applications, with a reported 9 million developers.\n\n
+        <b>Java</b> was originally developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle Corporation) and released in 1995 as a core component of \'Sun Microsystems\' Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.
+    </string>
+    <string formatted="false" name="struct">
+        <b>1.“public class HelloWorld”:</b>\n
+        This line has various aspects of java programming.\n
+        a. public: This is access modifier keyword which tells compiler access to class. Various values of access modifiers can be public, protected,private or default (no value).\n
+        b. class: This keyword used to declare a class. Name of class (HelloWorld) followed by this keyword.\n\n
+        <b>2. “public static void main (String [ ] args)”:</b>\n
+        Its method (Function) named main with string array as an argument.\n
+        a. public : Access Modifier\n
+        b. static: static is a reserved keyword which means that a method is accessible and usable even though no objects of the class exist.\n
+        c. void: This keyword declares nothing would be returned from the method. The method can return any primitive or object.\n
+        d. Method content inside curly braces. { } asdfla;sd\n\n
+        <b>3. System.out.println("Hello World from Java") :</b>\n
+        a. System: It is the name of Java utility class.\n
+        b. out:It is an object which belongs to System class.\n
+        c. println: It is utility method name which is used to send any String to the console.\n
+        d. “Hello World from Java”: It is String literal set as argument to println method.\n
+    </string>
+
+    <string formatted="false" name="variable">
+        A variable provides us with named storage that our programs can manipulate. Each variable in Java has a specific type, which determines the size and layout of the variable\'s memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.\n
+        You must declare all variables before they can be used. Following is the basic form of a variable declaration −\n\n
+        <b>data type variable [ = value][, variable [ = value] ...] ;</b>\n\n
+        Here data type is one of Java\'s datatypes and variable is the name of the variable. To declare more than one variable of the specified type, you can use a comma-separated list.
+
+    </string>
+    <string formatted="false" name="operator">
+        Java provides a rich set of operators to manipulate variables. We can divide all the Java operators into the following groups −\n
+        Arithmetic Operators\n
+        Relational Operators\n
+        Bitwise Operators\n
+        Logical Operators\n
+        Assignment Operators\n
+        Misc Operators\n\n\n
+
+        <b>Arithmetic Operators</b>\n
+        + (Addition)\n
+        - (Subtraction)\n
+        *   (Multiplication)\n
+        / (Division)\n
+        % (Modulus)\n
+        ++ (Increment)\n
+        — (Decrement)\n\n
+        <b>Relational Operators</b>\n
+        == (equal to)\n
+        != (not equal to)\n
+        &gt; (greater than)\n
+        &lt; (less than)\n
+        &gt;= (greater than or equal to)\n
+        &lt;= (less than or equal to)\n\n
+        <b>Bitwise Operators</b>\n
+        &amp; (bitwise and)\n
+        | (bitwise or)\n
+        ^ (bitwise XOR)\n
+        ~ (bitwise compliment)\n
+        &lt;&lt; (left shift)\n
+        &gt;&gt; (right shift)\n\n
+        <b>logical Operators</b>\n
+        &amp;&amp; (logical and)\n
+        || (logical or)\n
+        ! (logical not)\n\n
+        <b>Assignment Operators</b>\n
+        <b>=</b>\n	Simple assignment operator. Assigns values from right side operands to left side operand.\n
+        <b>+=</b>\n	Add AND assignment operator. It adds right operand to the left operand and assign the result to left operand.\n
+        <b>-=</b>\n	Subtract AND assignment operator. It subtracts right operand from the left operand and assign the result to left operand.\n
+        <b>*=</b>\n	Multiply AND assignment operator. It multiplies right operand with the left operand and assign the result to left operand.\n
+        <b>/=</b>\n	Divide AND assignment operator. It divides left operand with the right operand and assign the result to left operand.\n
+        <b>%=</b>\n	Modulus AND assignment operator. It takes modulus using two operands and assign the result to left operand.\n
+        <b>&lt;&lt;=</b>\n	Left shift AND assignment operator.\n
+        <b>&gt;&gt;=</b>\n	Right shift AND assignment operator.\n
+        <b>&amp;=</b>\n	Bitwise AND assignment operator.\n
+        <b>^=</b>\n	bitwise exclusive OR and assignment operator.\n
+        <b>|=</b>	bitwise inclusive OR and assignment operator.\n
+    </string>
+    <string formatted="false" name="inheritance">
+        <b>Inheritance</b> can be defined as the process where one class acquires the properties (methods and fields) of another. With the use of inheritance the information is made manageable in a hierarchical order.\n
+        The class which inherits the properties of other is known as subclass (derived class, child class) and the class whose properties are inherited is known as superclass (base class, parent class).\n\n
+        <b>extends Keyword</b>\n
+        extends is the keyword used to inherit the properties of a class. Following is the syntax of extends keyword.\n\n
+        <b>Syntax</b>\n
+        class Super {\n
+          .....\n
+        }\n
+       class Sub extends Super {\n
+       .....\n
+         }
+    </string>
+    <string formatted="false" name="poly">
+        <b>Polymorphism</b> is the ability of an object to take on many forms. The most common use of polymorphism in OOP occurs when a parent class reference is used to refer to a child class object.\n
+        Any Java object that can pass more than one IS-A test is considered to be polymorphic. In Java, all Java objects are polymorphic since any object will pass the IS-A test for their own type and for the class Object.\n
+        It is important to know that the only possible way to access an object is through a reference variable. A reference variable can be of only one type. Once declared, the type of a reference variable cannot be changed.\n
+        The reference variable can be reassigned to other objects provided that it is not declared final. The type of the reference variable would determine the methods that it can invoke on the object.\n
+        A reference variable can refer to any object of its declared type or any subtype of its declared type. A reference variable can be declared as a class or interface type.
+    </string>
+    <string formatted="false" name="abs">
+        As per dictionary, <b>Abstraction</b> is the quality of dealing with ideas rather than events. For example, when you consider the case of e-mail, complex details such as what happens as soon as you send an e-mail, the protocol your e-mail server uses are hidden from the user. Therefore, to send an e-mail you just need to type the content, mention the address of the receiver, and click send.\n
+        Likewise in Object-oriented programming, abstraction is a process of hiding the implementation details from the user, only the functionality will be provided to the user. In other words, the user will have the information on what the object does instead of how it does it.\n
+        In Java, abstraction is achieved using Abstract classes and interfaces.\n\n
+        <b>Abstract Class</b>\n
+        A class which contains the abstract keyword in its declaration is known as abstract class.
+    </string>
+    <string formatted="false" name="encaps">
+        <b>Encapsulation</b> is one of the four fundamental OOP concepts. The other three are inheritance, polymorphism, and abstraction.\n
+        Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.\n\n
+        <b>To achieve encapsulation in Java −</b>\n
+        1. Declare the variables of a class as private.\n
+        2. Provide public setter and getter methods to modify and view the variables values
+    </string>
+    <string formatted="false" name="iF">
+        An <b>if</b> statement can be followed by an optional else statement, which executes when the Boolean expression is false.\n\n
+        if(boolean expression)\n
+        /*if expression is true*/\n
+        else\n
+        /*if expression is false*/\n
+    </string>
+    <string formatted="false" name="For">
+        A <b>for</b> loop is a repetition control structure that allows you to efficiently write a loop that needs to be executed a specific number of times.\n
+        A for loop is useful when you know how many times a task is to be repeated.\n\n
+        <b>Syntax</b>\n
+        The syntax of a for loop is −\n\n
+        for(initialization; Boolean_expression; update)\n
+        {\n
+        // Statements\n
+        }
+    </string>
+
+    <string formatted="false" name="While">
+        A <b>while</b> loop statement in Java programming language repeatedly executes a target statement as long as a given condition is true.\n\n
+        <b>Syntax</b>\n
+        The syntax of a while loop is −\n\n
+        while(Boolean_expression) \n
+        {\n
+        // Statements\n
+        }
+
+    </string>
+    <string formatted="false" name="Switch">
+        A <b>switch</b> statement allows a variable to be tested for equality against a list of values. Each value is called a case, and the variable being switched on is checked for each case.\n\n
+        <b>Syntax</b>\n
+        The syntax of enhanced for loop is −\n\n
+        switch(expression) {\n
+        case value :\n
+        // Statements\n
+        break; // optional\n
+        case value :\n
+        // Statements\n
+        break; // optional\n
+        // You can have any number of case statements.\n
+       default : // Optional\n
+       // Statements\n
+}
+
+    </string>
+    <string formatted="false" name="string">
+        <b>Strings</b>, which are widely used in Java programming, are a sequence of characters. In Java programming language, strings are treated as objects.\n
+        The Java platform provides the String class to create and manipulate strings.\n\n
+        <b>Creating Strings</b>\n
+        The most direct way to create a string is to write −\n
+        String greeting = \"Hello world!\";\n\n
+        <b>char charAt(int index)</b>\n
+        Returns the character at the specified index.\n\n
+        <b>int compareTo(Object o)</b>\n
+        Compares this String to another Object.\n\n
+        <b>int compareTo(String anotherString)</b>\n
+        Compares two strings lexicographically.\n\n
+        <b>int compareToIgnoreCase(String str)</b>\n
+        Compares two strings lexicographically, ignoring case differences.\n\n
+        <b>String concat(String str)</b>\n
+        Concatenates the specified string to the end of this string.\n\n
+        <b>boolean contentEquals(StringBuffer sb)</b>\n
+        Returns true if and only if this String represents the same sequence of characters as the specified StringBuffer.\n\n
+        <b>static String copyValueOf(char[] data, int offset, int count)</b>\n
+        Returns a String that represents the character sequence in the array specified.\n\n
+        <b>boolean endsWith(String suffix)</b>\n
+        Tests if this string ends with the specified suffix.\n\n
+        <b>boolean equals(Object anObject)</b>\n
+        Compares this string to the specified object.\n\n
+        <b>boolean equalsIgnoreCase(String anotherString)</b>\n
+        Compares this String to another String, ignoring case considerations.\n\n
+        <b>byte getBytes()</b>\n
+        Encodes this String into a sequence of bytes using the platform\'s default charset, storing the result into a new byte array.\n\n
+        <b>byte[] getBytes(String charsetName)</b>n\
+        Encodes this String into a sequence of bytes using the named charset, storing the result into a new byte array.\n\n
+        <b>void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)</b>\n
+        Copies characters from this string into the destination character array.\n\n
+        <b>int hashCode()</b>\n
+        Returns a hash code for this string.\n\n
+        <b>int indexOf(int ch)</b>\n
+        Returns the index within this string of the first occurrence of the specified character.\n\n
+        <b>int indexOf(int ch, int fromIndex)</b>\n
+        Returns the index within this string of the first occurrence of the specified character, starting the search at the specified index.\n\n
+        <b>int indexOf(String str)</b>\n
+        Returns the index within this string of the first occurrence of the specified substring.\n\n
+        <b>int indexOf(String str, int fromIndex)</b>\n
+        Returns the index within this string of the first occurrence of the specified substring, starting at the specified index.\n\n
+        <b>String intern()</b>\n
+        Returns a canonical representation for the string object.
+    </string>
+
+    <string formatted="false" name="except">
+        An <b>exception</b> (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled.\n
+        An exception can occur for many different reasons. Following are some scenarios where an exception occurs.\n
+        A user has entered an invalid data.\n
+        A file that needs to be opened cannot be found.\n
+        A network connection has been lost in the middle of communications or the JVM has run out of memory.\n
+        Some of these exceptions are caused by user error, others by programmer error, and others by physical resources that have failed in some manner.\n
+        Based on these, we have three categories of Exceptions. You need to understand them to know how exception handling works in Java.\n\n
+       <b>Java Exception Handling Keywords</b>\n
+        There are 5 keywords used in java exception handling.\n
+        1. try\n
+        2. catch\n
+        3. finally\n
+        4. throw\n
+        5. throws
+    </string>
+    <string formatted="false" name="object">
+        Let us now look deep into what are <b>objects</b>. If we consider the real-world, we can find many objects around us, cars, dogs, humans, etc. All these objects have a state and a behavior.\n
+        If we consider a dog, then its state is - name, breed, color, and the behavior is - barking, wagging the tail, running.\n
+        If you compare the software object with a real-world object, they have very similar characteristics.\n
+        Software objects also have a state and a behavior. A software object\'s state is stored in fields and behavior is shown via methods.\n
+        So in software development, methods operate on the internal state of an object and the object-to-object communication is done via methods.\n\n
+        <b>Creating an Object</b>\n
+        As mentioned previously, a class provides the blueprints for objects. So basically, an object is created from a class. In Java, the new keyword is used to create new objects.\n
+        There are three steps when creating an object from a class −\n\n
+        <b>Declaration</b>\n − A variable declaration with a variable name with an object type.\n
+        <b>Instantiation</b>\n − The \'new\' keyword is used to create the object.\n
+        <b>Initialization</b>\n − The \'new\' keyword is followed by a call to a constructor. This call initializes the new object.
+    </string>
+    <string formatted="false" name="Class">
+         <b>What is Java Class?</b>\n
+          Java class is nothing but a template for object you are going to create or it’s a blue print by using this we create an object. In simple word we can say it’s a specification or a pattern which we define and every object we define will follow that pattern.\n\n
+          Class (name of the class)\n
+        {\n
+        (Here define member of class)\n
+        }\n\n
+        Access level of class:\n
+        Java class has mainly two type of access level:\n
+        <b><u>Default:</u></b> class objects are accessible only inside the package.\n
+        <b><u>Public:</u></b> class objects are accessible in code in any package.\n
+    </string>
+    <string formatted="false" name="method">
+        A Java <b>method</b> is a collection of statements that are grouped together to perform an operation. When you call the System.out.println() method, for example, the system actually executes several statements in order to display a message on the console.\n
+        Now you will learn how to create your own methods with or without return values, invoke a method with or without parameters, and apply method abstraction in the program design.\n\n
+        <b>Creating Method</b>\n
+        Considering the following example to explain the syntax of a method −\n\n
+        <b>Syntax</b>\n
+        public static int methodName(int a, int b) \n
+        {\n
+        // body\n
+        }\n\n
+        Here,\n
+        <b>public static</b> − modifier\n
+        <b>int</b> − return type\n
+        <b>methodName</b> − name of the method\n
+        <b>a, b</b> − formal parameters\n
+        <b>int a, int b</b> − list of parameters\n
+        Method definition consists of a method header and a method body.
+    </string>
+
+    <string formatted="false" name="constructor">
+        The most important sub topic would be <b>constructors</b>. Every class has a constructor. If we do not explicitly write a constructor for a class, the Java compiler builds a default constructor for that class.\n
+        Each time a new object is created, at least one constructor will be invoked. The main rule of constructors is that they should have the same name as the class. A class can have more than one constructor.\n\n
+        <b>Example</b>\n
+        public class Puppy {\n
+        public Puppy() {\n
+        }\n
+        public Puppy(String name) {\n
+        // This constructor has one parameter, name.\n
+        }\n
+        }
+    </string>
+    <string formatted="false" name="array">
+        Java provides a data structure, the <b>array</b>, which stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.\n
+        Instead of declaring individual variables, such as number0, number1, ..., and number99, you declare one array variable such as numbers and use numbers[0], numbers[1], and ..., numbers[99] to represent individual variables.\n\n
+        <b>Declaring Array Variables</b>\n
+        To use an array in a program, you must declare a variable to reference the array, and you must specify the type of array the variable can reference. Here is the syntax for declaring an array variable −\n\n
+        <b>Syntax</b>\n
+        dataType[] arrayRefVar;   // preferred way.\n
+        or\n
+         dataType arrayRefVar[];  // works but not preferred way.
+    </string>
+    <string formatted="false" name="applet">
+        An <b>applet</b> is a Java program that runs in a Web browser. An applet can be a fully functional Java application because it has the entire Java API at its disposal.\n
+        There are some important differences between an applet and a standalone Java application, including the following −\n\n
+        1. An <b>applet</b> is a Java class that extends the java.applet.Applet class.\n
+        2. A main() method is not invoked on an applet, and an applet class will not define main().\n
+        3. <b>Applets</b> are designed to be embedded within an HTML page.\n
+        4. When a user views an HTML page that contains an applet, the code for the applet is downloaded to the user\'s machine.\n
+        5. A JVM is required to view an applet. The JVM can be either a plug-in of the Web browser or a separate runtime environment.\n
+        6. The JVM on the user\'s machine creates an instance of the applet class and invokes various methods during the applet\'s lifetime.\n
+        7. Applets have strict security rules that are enforced by the Web browser. The security of an applet is often referred to as sandbox security, comparing the applet to a child playing in a sandbox with various rules that must be followed.\n\n
+        Other classes that the applet needs can be downloaded in a single Java Archive (JAR) file.
+
+    </string>
+    <string formatted="false" name="swing">
+        <b>Java Swing</b> tutorial is a part of Java Foundation Classes (JFC) that is used to create window-based applications. It is built on the top of AWT (Abstract Windowing Toolkit) API and entirely written in java.\n\n
+        Unlike AWT, Java Swing provides platform-independent and lightweight components.\n\n
+        The <b>javax.swing</b> package provides classes for java swing API such as JButton, JTextField, JTextArea, JRadioButton, JCheckbox, JMenu, JColorChooser etc.
+    </string>
+
+    <string formatted="false" name="adv">
+        The advantages of Java are as follows:\n
+        <b>1. Java is easy to learn.</b>\n
+        Java was designed to be easy to use and is therefore easy to write, compile, debug, and learn than other programming languages.\n\n
+        <b>2. Java is object-oriented.</b>\n
+        This allows you to create modular programs and reusable code.\n\n
+        <b>3. Java is platform-independent.</b>\n
+        One of the most significant advantages of Java is its ability to move easily from one computer system to another. The ability to run the same program on many different systems is crucial to World Wide Web software, and Java succeeds at this by being platform-independent at both the source and binary levels.\n\n
+        4. Because of Java\'s robustness, ease of use, cross-platform capabilities and security features, it has become a language of choice for providing worldwide Internet solutions.
+    </string>
+</resources>
